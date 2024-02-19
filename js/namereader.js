@@ -37,6 +37,7 @@
 
     window.addEventListener('load', function () {
         $unsortedNames = document.getElementById('unsortedNames');
+        // this json was coerced out of the list of names provided by https://medievalscotland.org/kmo/AnnalsIndex/
         fetch('./json/names.json')
             .then((response)=>{
                 return response.json();
